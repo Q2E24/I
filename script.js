@@ -17,7 +17,11 @@ function selectOption(option) {
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 2; // Increase font size by * 2px
         yesButton.style.fontSize = newSize + 'px';
-    } 
+    } else {
+        // If neither "Yes" nor "Idk" was clicked, show an alert message
+        alert('You clicked the idk button :(')
+        
+    }
  }
 
  // Function to finish rainbow colors and then execute a callback function
